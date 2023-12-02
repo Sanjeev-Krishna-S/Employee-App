@@ -14,7 +14,7 @@ const path = require('path');
 app.use(express.static(path.join(__dirname, '/dist/FrontEnd')));
 
 // Task2: create MongoDB connection
-mongoose.connect('mongodb+srv://Sanjeev-Krishna:sanjeevsanj@cluster0.05rwifj.mongodb.net/studentdb?retryWrites=true&w=majority', { useUnifiedTopology: true })
+mongoose.connect('url', { useUnifiedTopology: true }) //Paste your DB URL inside the single quotes
     .then(() => console.log('MongoDB Connected'))
     .catch(err => console.log(err));
 
